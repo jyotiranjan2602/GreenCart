@@ -7,7 +7,7 @@ const Login = () => {
     const [state, setState] =React.useState("login");
     const [name, setName] = React.useState(" ")
     const [email, setEmail] = React.useState(" ")
-    const [password, setPassword] =React.useState(" ")
+    const [password, setPassword] =React.useState("")
     const onSubmitHandler = async(event)=>{
         try {
             event.preventDefault();
