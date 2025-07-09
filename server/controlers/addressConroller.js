@@ -4,8 +4,9 @@ import Address from "../models/Address.js";
 // Add address : /api/address/add
 export const addAddress = async (req, res) => {
     try {
-        const userId = req.userId; // Or req.user._id, depending on your auth middleware
         const address = req.body;
+        const userId = req.userId; // Or req.user._id, depending on your auth middleware
+        
 
         if (!userId) {
             return res.status(400).json({ success: false, message: "User ID is required" });

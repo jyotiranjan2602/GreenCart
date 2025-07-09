@@ -20,7 +20,7 @@ await connectCloudinary()
 // allowed multiple origins
 
 
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['http://localhost:5173','https://greencart-rouge.vercel.apps']
 
 
 
